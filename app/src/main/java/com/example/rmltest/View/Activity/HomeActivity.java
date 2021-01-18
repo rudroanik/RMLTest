@@ -27,6 +27,7 @@ public class HomeActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_home);
         homeViewModel = new ViewModelProvider(HomeActivity.this).get(HomeViewModel.class);
         binding.progressBar.setVisibility(View.VISIBLE);
+
         loadPostData();
     }
 

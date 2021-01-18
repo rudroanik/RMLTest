@@ -26,11 +26,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private void onClick() {
         binding.loginBtn.setOnClickListener(v -> {
-            validation();
+            loginValidation();
         });
     }
 
-    private void validation() {
+    private void loginValidation() {
         if (TextUtils.isEmpty(binding.signInPhoneEmilEt.getText())) {
             binding.signInPhoneEmilEt.setError("Enter user name");
             binding.signInPhoneEmilEt.requestFocus();
